@@ -1,0 +1,246 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"My",
+				"Mywebsite"
+			],
+			[
+				"ma",
+				"max_length"
+			],
+			[
+				"ti",
+				"title\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/TOBI/Django/lecture 4 sql model and migration/src4/airline/manage.py",
+		"/C/Users/TOBI/airline/manage.py",
+		"/C/Users/TOBI/Django/Myweb/Mywebsite/templates/Mywebsite/about.html",
+		"/C/Users/TOBI/Django/Myweb/Mywebsite/templates/Mywebsite/index.html",
+		"/C/Users/TOBI/Django/Myweb/Mywebsite/templates/Mywebsite/contact.html",
+		"/C/Users/TOBI/Django/Myweb/manage.py",
+		"/C/Users/TOBI/Django/lecture 4 sql model and migration/src4/airline/users/views.py",
+		"/C/Users/TOBI/Django/lecture 4 sql model and migration/src4/airline/flights/urls.py",
+		"/C/Users/TOBI/Django/Myweb/Myweb/urls.py",
+		"/C/Users/TOBI/airline/airline/urls.py",
+		"/C/Users/TOBI/Django/Myweb/Myweb/settings.py",
+		"/C/Users/TOBI/airline/users/views.py",
+		"/C/Users/TOBI/airline/flights/urls.py",
+		"/C/Users/TOBI/airline/users/urls.py",
+		"/C/Users/TOBI/airline/users/templates/users/user.html",
+		"/C/Users/TOBI/airline/users/templates/users/layout.html",
+		"/C/Users/TOBI/airline/flights/models.py",
+		"/C/Users/TOBI/airline/flights/views.py",
+		"/C/Users/TOBI/airline/flights/templates/flights/flight.html",
+		"/C/Users/TOBI/airline/flights/templates/flights/layout.html",
+		"/C/Users/TOBI/airline/flights/admin.py",
+		"/C/Users/TOBI/airline/flights/templates/flights/index.html",
+		"/C/Users/TOBI/airline/airline/settings.py",
+		"/C/Users/TOBI/airline/flights/templates/flights/add.html",
+		"/C/Users/TOBI/Django/lecture 4 sql model and migration/src4/airline/flights/models.py",
+		"/C/Users/TOBI/Django/lecture 4 sql model and migration/src4/airline/flights/admin.py",
+		"/C/Users/TOBI/Django/lecture 4 sql model and migration/src4/airline/flights/views.py",
+		"/C/Users/TOBI/airline/db.sqlite3",
+		"/C/Users/TOBI/airline/flights/migrations/0001_initial.py",
+		"/C/Users/TOBI/lecture3/tasksapp/urls.py",
+		"/C/Users/TOBI/lecture3/tasksapp/tests.py",
+		"/C/Users/TOBI/lecture3/tasksapp/models.py",
+		"/C/Users/TOBI/lecture3/tasksapp/apps.py",
+		"/C/Users/TOBI/lecture3/tasksapp/admin.py",
+		"/C/Users/TOBI/lecture3/tasksapp/__init__.py",
+		"/C/Users/TOBI/lecture3/tasksapp/templates/tasksapp/add.html",
+		"/C/Users/TOBI/lecture3/newyear/templates/newyear/index.html",
+		"/C/Users/TOBI/lecture3/hello/templates/hello/index.html",
+		"/C/Users/TOBI/lecture3/newyear/static/newyear/styles.css",
+		"/C/Users/TOBI/lecture3/tasksapp/templates/tasksapp/index.html",
+		"/C/Users/TOBI/lecture3/tasksapp/static/tasksapp/styles.css",
+		"/C/Users/TOBI/lecture3/newyear/static/newyear/style.css",
+		"/C/Users/TOBI/lecture3/tasksapp/static/tasksapp/style.css",
+		"/C/Users/TOBI/lecture3/newyear/static/hello/style.css",
+		"/C/Users/TOBI/lecture3/newyear/views.py",
+		"/C/Users/TOBI/lecture3/tasksapp/views.py",
+		"/C/Users/TOBI/lecture3/newyear/urls.py",
+		"/C/Users/TOBI/lecture3/lecture3/urls.py",
+		"/C/Users/TOBI/lecture3/lecture3/settings.py",
+		"/C/Users/TOBI/lecture3/hello/views.py",
+		"/C/Users/TOBI/lecture3/tasksapp/templates/taskapp/index.html",
+		"/C/Users/TOBI/lecture3/hello/urls.py",
+		"/C/Users/TOBI/lecture3/tasksapp/templates/task/index.html",
+		"/C/Users/TOBI/lecture3/manage.py",
+		"/C/Users/TOBI/lecture3/hello/templates/hello/greet.html",
+		"/C/Users/TOBI/lecture3/hello/template/index.html",
+		"/C/Users/TOBI/websample2/websample2/urls.py",
+		"/C/Users/TOBI/websample2/websample2/settings.py",
+		"/C/Users/TOBI/websample2/manage.py",
+		"/C/Users/TOBI/websample2/hello/views.py",
+		"/C/Users/TOBI/websample2/hello/url.py",
+		"/C/Users/TOBI/websample2/lecture3/urls.py",
+		"/C/Users/TOBI/websample2/lecture3/settings.py",
+		"/C/Users/TOBI/websample2/heart/apps.py",
+		"/C/Users/TOBI/Desktop/datascience/html and css files/moway website/web/index.html",
+		"/C/Users/TOBI/Desktop/datascience/html and css files/moway website/web/contact.html",
+		"/C/Users/TOBI/Desktop/datascience/html and css files/moway website/web/other_fendart.html",
+		"/C/Users/TOBI/Desktop/datascience/html and css files/moway website/web/other_watch.html",
+		"/C/Users/TOBI/Desktop/datascience/html and css files/moway website/web/other_phones.html",
+		"/C/Users/TOBI/Desktop/datascience/html and css files/my cv html.html"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "manage.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 207.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

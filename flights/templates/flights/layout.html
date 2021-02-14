@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flights</title>
+        <style>
+            .bodyy { background-image: url("{% static 'flights/images/plane-image2.jpeg'%}"); background-size: cover;}
+		</style>
+
+    </head>
+    <body class="bodyy">
+        {% block body %}
+        {% endblock %}
+    </body>
+
+    <button><a href="{% url 'logout' %}">Log Out</a></button>
+    <button><a href="{% url 'booking' %}">Back to Booking Page</a></button>
+    <button><a href="#">Proceed to make payment</a></button>
+
+</html>

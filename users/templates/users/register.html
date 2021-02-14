@@ -1,0 +1,47 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+     <style>
+        	
+    		.center {
+    			position: absolute;
+    			left: 50%;
+    			top: 50%;
+    			transform: translate(-50%, -50%);
+    			
+    			
+    			border: 2px solid #0000ff;
+    			padding:20px;
+
+    			}
+				
+    			.blacky { background-color: black; }
+				.bodyy {background-image: url("{% static 'users/images/plane-image1.jpeg'%}"); background-size: cover;}
+    		 
+		</style>
+</head>
+
+<body class="bodyy">
+	
+	<div class="center">
+        <h3>To register, enter your details below</h3>
+	{% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+    <form method="POST">
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit">Signup</button>
+         <button><a href="{% url 'login_link' %}">home</a></button>
+    </form>
+
+</div>
+
+</body>
+
+</html>
+
+

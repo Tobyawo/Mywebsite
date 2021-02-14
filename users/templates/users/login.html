@@ -1,0 +1,149 @@
+<!-- Let’s begin by creating a form where a user can log in. We’ll create a layout.html file as always, and then create a login.html file which contains a form, and that displays a message if one exists. -->
+
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Users</title>
+        <style>
+        	
+            .center {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                
+                
+                border: 2px solid #0000ff;
+                padding:20px;
+
+                }
+             
+
+    		.left-top {
+    			position: absolute;
+    			left: 80%;
+    			top: 20%;
+    			transform: translate(-50%, -30%);
+    			border: 2px solid #0000ff;
+    			padding:30px;
+                
+
+    			}
+                .left-top2 {
+                position: absolute;
+                left: 80%;
+                top: 50%;
+                transform: translate(-50%, -30%);
+                padding:2px 5px 2px 5px;
+                }
+
+                .left-top3 {
+                position: absolute;
+                left: 80%;
+                top: 80%;
+                transform: translate(-50%, -30%);
+                border: 2px solid #0000ff;
+                padding:30px;
+
+                }
+				
+    			.blacky { background-color: black; }
+				.bodyy {background-image: url("{% static 'users/images/plane-image1.jpeg'%}"); background-size: cover;}
+    		   
+		</style>
+    </head>
+    <body class="bodyy">
+        <div></div>
+    	
+    	<div class="left-top">
+    	 
+
+         {% if message %}
+        <div>{{ message }}</div>
+    {% endif %} 
+    	<h3>Sign in</h3>
+
+   
+
+    <form action="{% url 'login_link' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Login">
+    </form>
+        <h5><p><a href="{% url 'register' %}">Click here to register</a></p></h5>
+   </div>
+     
+<section id="search page">
+        
+<div class="left-top3">
+
+    <h3>Search for a flight</h3>
+    <h3> From </h3>
+    <input name="origin" list="states" placeholder="Choose City">
+    <datalist id="states">
+        <option value="Abuja"></option>
+        <option value="Lagos"></option>
+        <option value="Edo"></option>
+        <option value="Benin"></option>
+        <option value="Porthacourt"></option>
+        <option value="Kano"></option>
+        <option value="Osun"></option>
+         </datalist>
+    <h3> To </h3>
+    <input name="destination" list="states" placeholder="Choose City">
+    <datalist id="states">
+         <option value="Abuja"></option>
+        <option value="Lagos"></option>
+        <option value="Edo"></option>
+        <option value="Benin"></option>
+        <option value="Porthacourt"></option>
+        <option value="Kano"></option>
+        <option value="Osun"></option>
+    </datalist>
+
+     <h3> Adult (12+) </h3>
+    <input name="adult" list="number" placeholder="1">
+    <datalist id="adult">
+        <option value=1></option>
+        <option value=2></option>
+        <option value=3></option>
+        <option value=4></option>
+        <option value=5></option>
+        <option value=6></option>
+    </datalist>
+
+    <h3> Child (2-12) </h3>
+    <input name="child" list="number" placeholder="0">
+    <datalist id="child">
+        <option value=1></option>
+        <option value=2></option>
+        <option value=3></option>
+        <option value=4></option>
+        <option value=5></option>
+        <option value=6></option>
+    </datalist>
+
+    <h3> Infant (0-2) </h3>
+    <input name="Infant" list="number" placeholder="0">
+    <datalist id="infant">
+        <option value=1></option>
+        <option value=2></option>
+        <option value=3></option>
+        <option value=4></option>
+        <option value=5></option>
+        <option value=6></option>
+    </datalist>
+   
+    <label for="Flight_type" > <input id= "Economy" value="Economy" type="radio" name="Flight_type">Economy</label>
+     <label for="Flight_type" > <input id="First_Class" value="First_Class"type="radio" name="Flight_type">First_Class</label>
+        
+    <button><a href="{% url 'booking' %}">SEARCH FLIGHT</a></button>
+</div>
+</section>
+
+
+</body> 
+</html>

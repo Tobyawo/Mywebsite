@@ -1,0 +1,42 @@
+<!-- Let’s begin by creating a form where a user can log in. We’ll create a layout.html file as always, and then create a login.html file which contains a form, and that displays a message if one exists. -->
+
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Users</title>
+        <style>
+        	
+    		.center {
+    			position: absolute;
+    			left: 50%;
+    			top: 50%;
+    			transform: translate(-50%, -50%);
+    			
+    			
+    			border: 5px solid #0000ff;
+    			padding:20px;
+
+    			}
+				
+    			.blacky { background-color: black; }
+				.bodyy {background-image: url("{% static 'users/images/plane-image1.jpeg'%}"); background-size: cover;}
+    		   
+		</style>
+    </head>
+    <body class="bodyy">
+    	
+    	<div class="center">
+    	 
+    	
+        {% block body %}
+        
+        {% endblock %}
+
+        <h2><p><a href="{% url 'register' %}">Click here to register</a></p></h2>
+        <h2><p><a href="{% url 'booking' %}">Click here to book</a></p></h2>
+   </div>
+
+    </body>    
+</html>

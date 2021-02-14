@@ -1,0 +1,21 @@
+{% extends "flights/layout.html" %}
+
+<!-- since the difference between add.html and index.html is the content of body tag of their pages. Hence you can make them inherite a single page called layout.html. this process is known as template inheritance. it is used instead of copying codes from one file to another that has the same contents  {% for record in records %} {% endfor %}-->
+
+
+
+{% block body %}
+    <h1>Your Booking records: From {{ records.origin }} to {{ records.destination }}</h1>
+    <ul>
+        
+            First Name: {{ records.first }}
+            <li>Last Name: {{ records.last }}</li>
+            <li>Email: {{records.email}}</li>
+            <li>Phone Number: {{records.phone}}</li>
+            <li>Date: </li>
+            <li> Departure time: 12:30pm</li>
+            <li> Flight Duration: </li>
+
+        
+    </ul>
+{% endblock %}

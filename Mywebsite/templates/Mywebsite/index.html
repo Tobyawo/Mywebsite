@@ -1,0 +1,695 @@
+{% extends "Mywebsite/layout.html" %}
+
+{% load static %}
+
+{% block body %}
+
+<div style = "background-image: url('{% static 'Mywebsite/images/ai.jpeg'%}'); background-size: cover;"> 
+<section style="backgroundimage" class="w3l-bootstrap-header">
+  <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"> My Website</a>
+      <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+
+         
+        
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">My Contact</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+</section>
+ <!--  Main banner section -->
+ <section class="w3l-main-banner" id="home">
+  <div class="companies20-content">
+    <div class="companies-wrapper">
+        <div class="item">
+         
+            <div class="slider-info banner-view text-center">
+              <div class="banner-info container"> 
+                <img src= "{% static 'Mywebsite/images/c1.jpg'%}" alt="about-image" class="img-fluid">
+                <h3 class="banner-text mt-5">Hello, I’m Oluwatobi Awoyomi
+                  </h3>
+                  <br><p class="my-4 mb-5">Geologist / Data scientist / Web developer / AI tutor </p></br>
+               
+              </div>
+            </div>
+          
+        </div>
+    </div>
+  </div>
+</section>
+</div>
+ <!--  //Main banner section -->
+<section class="w3l-about ">
+<div class="skills-bars py-5">
+ <div class="container py-md-3">
+  <div class="heading text-center mx-auto">
+    <h3 class="head">My Professional Summary</h3>
+    <p class="my-3 head"> I am a data scientist with sound educational background in Geoscience and over 2 years experience working with analytical tools such as Excel, SQL, QGIS and Python programming language both for machine learning and web development to help organizations make accurate analysis, predictions, automation of decisions and processes</p>
+
+    </div>
+    <h3> Skills and Competencies</h3>
+<div class="row mt-5 pt-3">
+
+<div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids ">
+    <h4>JavaScript</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 45% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids ">
+    <h4>CSS</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 50% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+
+<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+    <h4>HTML</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 50% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+
+<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+    <h4>Django</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 50% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+
+
+<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+    <h4>QGIS</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 60% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+        <h4>Excel</h4>
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
+</div>
+       <div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+    <h4>MS SQL</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+       </div>
+
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+        <h4>Python</h4>
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+        <h4>Adaptability and Flexibility</h4>
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 100% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+        <h4>Interpersonal communication</h4>
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 900% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+        <h4>Team Work</h4>
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 100% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
+</div>
+ </div>
+ </div>
+</div>
+ </section>
+<div style = "background-image: url('{% static 'Mywebsite/images/3.jpg'%}');background-size: cover;">  
+<section class="w3l-feature-3" id="features">
+	<div class="grid top-bottom">
+		<div class="container">
+			<div class="heading text-center mx-auto">
+                <h3 class="head text-white">I'm Open For Employment</h3>
+                <p class="my-3 head text-white">I am open for Full time / part time / freelance employment </p>
+              </div>
+			<div class="middle-section grid-column text-center mt-5 pt-3">
+				<div class="three-grids-columns">
+					<span class="fa fa-paint-brush"></span>
+					<h4>Data collection and annotation</h4>
+					<p>I have  experience in geological, environmental or business related data collection of data using digital devices or survey, data verification, groundtruthing, and data annotation.</p>
+
+				</div>
+				<div class="three-grids-columns">
+					<span class="fa fa-ils"></span>
+					<h4>Data Analysis and Science</h4>
+					<p>I can explore your data for insight, build and train a machine learning algorithm with the data for future predictions.</p>
+
+				</div>
+				<div class="three-grids-columns">
+					<span class="fa fa-camera"></span>
+					<h4>Geospatial Analysis</h4>
+					<p>I can help digitize your maps. Do spatial analysis of your target locations</p>
+
+				</div>
+
+                <div class="three-grids-columns">
+					<span class="fa fa-camera"></span>
+					<h4>Chatbot development</h4>
+					<p>I can build an artificial intelligent powered chatbot that uses natural language recognition capabilities to discern the intent of what a user is saying, in order to your organisation respond to inquiries and requests</p>
+				</div>
+
+                <div class="three-grids-columns">
+					<span class="fa fa-camera"></span>
+					<h4>Web development</h4>
+					<p>I can build a dynamic and interactive web applications for your company</p>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+<div class="products-4" id="portfolio">
+    <!-- Products4 block -->
+    <div id="products4-block" class="text-center">
+        <div class="container">
+            <div class="heading text-center mx-auto mb-5">
+                <h3 class="head">I Love What I Do</h3>
+                <p class="my-3 head">I love using the tools of today to embrace the tradition of the past</p>
+              </div>
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label class="tabtle" for="tab1">My Projects</label>
+          <!-- i remove the website tag
+           <input id="tab4" type="radio" name="tabs">
+            <label class="tabtle" for="tab4">Website</label>
+             -->
+            <section id="content1" class="tab-content text-left">
+                <div class="d-grid grid-col-3">
+                    <div class="product">
+                        <p>Heart Disease Predictor WebApp</p>
+                        <a  href = "{ static 'Mywebsite/images/heart-image.jpeg'%}" alt="about-image" class="img-fluid" data-lightbox="example-set"
+                            data-title="This webapp predicts the presence of heart disease in patient">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/heart-image.jpeg'%}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        <p><a href="#"> Click Here to check out the Heart Disease Predictor WebApp</a></p>
+                    </div>
+
+                     <div class="product">
+                        <p> Flight Booking Web App</p>
+                        <a  href = "{ static 'Mywebsite/images/flight-image.jpeg'%}" alt="flight-image" class="img-fluid" data-lightbox="example-set"
+                            data-title="This Webapp helps in booking flights online ">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/flight-image.jpeg'%}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        <p><a href="{% url 'login_link' %}"> Click Here to check out the flight booking website</a></p>
+                    </div>
+
+                     <div class="product">
+                        <p>Image Annotation</p>
+                        <a href="{% static 'Mywebsite/images/data-annotation-image.jpeg'%}" data-lightbox="example-set"
+                            data-title="Image objects annotation">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/data-annotation-image.jpeg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <p>Supermarket Price Prediction WebApp</p>
+                        <a href="{% static 'Mywebsite/images/datascience.jpeg' %}" data-lightbox="example-set"
+                            data-title="This webapp predicts the presence of heart disease in patient">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/datascience.jpeg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        <p><a href="#"> Click Here to check out My supermarket prices prediction WebApp</a></p>
+                    </div>
+
+                     <div class="product">
+                        <p> AI Powered Chatbot  </p>
+                        <a href="{% static 'Mywebsite/images/chatbot-image.png' %}" data-lightbox="example-set"
+                            data-title="AI powered chatbot to help customer service ">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/chatbot-image.png' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        <p><a href="#"> Click Here to check out my AI powered Chatbot for a flower company (built with IBM Assistant)</a></p>
+                    </div>
+
+
+                    <div class="product">
+                        <p>Geospatial Analysis</p>
+                        <a href="{% static 'Mywebsite/images/geo-analysis-image.jpeg' %}" data-lightbox="example-set"
+                            data-title="Geospatial Analysis ">
+                            <figure>
+                                <img src= "{% static 'Mywebsite/images/geo-analysis-image.jpeg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        <p><a href="https://www.Tobyawo.github.com"> Click Here to check out my Geospatial analysis repository on Github</a></p>
+                    </div>
+
+
+                    </div>
+
+
+                    
+                    
+                </div>
+            </section>
+
+            <section id="content2" class="tab-content text-left">
+                <div class="d-grid grid-col-3">
+                    <div class="product">
+                        <a href="{% static 'Mywebsite/images/g7.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g7.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                        <a href="{% static 'Mywebsite/images/g8.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g8.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                       
+                    </div>
+                    <div class="product">
+                        <a href="{% static 'Mywebsite/images/g1.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g1.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                       
+                    </div>
+                    <div class="product">
+                        <a href="{% static 'Mywebsite/images/g2.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g2.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                       
+                    </div>
+                    <div class="product">
+                        <a href="{% static 'Mywebsite/images/g3.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g3.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                        <a href="{% static 'Mywebsite/images/g4.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g4.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section id="content3" class="tab-content text-left">
+                <div class="d-grid grid-col-3">
+                    <div class="product">
+                        <a href="{% static 'Mywebsite/images/g5.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g5.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                      
+                    </div>
+                    <div class="product">
+                        <a href="{% static 'Mywebsite/images/g6.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g6.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                       
+                    </div>
+                    <div class="product">
+                        <a href="{% static 'Mywebsite/images/g7.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g7.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section id="content4" class="tab-content text-left">
+                <div class="d-grid grid-col-3">
+                    <div class="product">
+                        <a href= "{% static 'Mywebsite/images/g8.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g8.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                        <a href="{% static 'Mywebsite/images/g1.jpg' %}" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/g1.jpg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Products4 block -->
+</div>
+ 
+ <script src="{% static 'Mywebsite/js/jquery-3.3.1.min.js' %}" ></script>
+<script src="{% static 'Mywebsite/js/lightbox-plus-jquery.min.js' %}"></script>
+<div style = "background-image: url('{% static 'Mywebsite/images/2.jpg'%}'); "> 
+<section class="services-12" id="experience">
+	<div class="form-12-content">
+		<div class="container">
+			<div class="grid grid-column-2 ">
+				
+				<div class="column1">
+
+            <h3 class="mb-5">Experiences</h3>
+                    <div class="experience-top">
+            <h5>Oct, 2020 - present</h5>
+                        <h4> AI and Web Development Tutor at PrimeTime Digital Academy, Abuja</h4>
+                        <p class="my-3 text-white"> I teach AI and web development to groups of AI and Web development enthusiasts</p>
+            </div>
+
+          <h3 class="mb-5">Experiences</h3>
+					<div class="experience-top">
+            <h5>May, 2020 - present</h5>
+						<h4>Freelance Data Annotation Auditor at Boston Academy, Lagos</h4>
+						<p class="my-3 text-white">I supervise and audit a team of data annotator ensuring the quality of their work is up to standard.</p>
+            </div>
+            <div class="experience-top">
+              <h5>March, 2020 - present</h5>
+              <h4>Data Entry & Verification Agent (freelance) at VerifyMe Nigeria</h4>
+              <p class="my-3 text-white">I verify the authenticity of customer's data for the organisation</p>
+              </div>
+              <div class="experience-top">
+                <h5>Sept., 2018 - present</h5>
+                <h4>Geography/Computer Teacher/AI Club instructor at Kings' Crown College, Nasarawa</h4>
+                <p class="my-3 text-white">I teach Geography and Computer science to the Senior secondary students.
+                I established an AI Club in the school where I expose the students to the capabilities of
+                artificial intelligence and Python programming</p>
+                </div>
+
+
+                 <div class="experience-top">
+                <h5>June, 2017 - June, 2018</h5>
+                <h4>Data Management Officer at National Orientation Agency, Abuja</h4>
+                <p class="my-3 text-white">I was involved in collection, entry and management of the agency’s databank.
+                I was involved in the enlightenment of the general public on government’s policies, programs and activities.  </p>
+                </div>
+
+
+                   <div class="experience-top">
+                <h5>May, 2015 - Nov., 2015</h5>
+                <h4>Geospatial Analytic Intern at Geomatics Nigeria Limited, Ibadan</h4>
+                <p class="my-3 text-white">I was involved in geospatial analysis for environmental monitoring and evaluation assessment using ArcGIS.</p>
+                </div>
+
+					</div>
+					<div class="column2">
+            <h3 class="mb-5">Education</h3>
+            <div class="experience-top">
+              <h5>2016</h5>
+              <p class="my-3 text-white">B.Tech., Geology, Federal University of Technology, Minna, Nigeria</p>
+              </div>
+
+
+
+            <h3 class="mb-5">Trainings and Certifications</h3>
+            <div class="experience-top">
+                <h5>Sept., 2020</h5>
+                <p class="my-3 text-white">Jobberman Soft-Skills Certificate of completion.</p>
+              </div>
+
+              <div class="experience-top">
+                <h5>April, 2020</h5>
+                <p class="my-3 text-white">IBM Data Science Professional Certificate.</p>
+              </div>
+
+              <div class="experience-top">
+                <h5>June, 2020</h5>
+                <p class="my-3 text-white">IBM Applied AI Professional Certificate.</p>
+              </div>
+
+              <div class="experience-top">
+                <h5>Nov., 2019</h5>
+                <p class="my-3 text-white">Sololearn Certificate of completion on Structured Query Language (SQL Database).</p>
+              </div>
+
+              <div class="experience-top">
+                <h5>Feb., 2018-April, 2018</h5>
+                <p class="my-3 text-white">Employability training by Guardian of the Nation International (GOTNI) Leadership Center and The Next Economy. Abuja.</p>
+              </div>
+
+              <h3 class="mb-5">Associations/Clubs</h3>
+            <div class="experience-top">
+              <p class="my-3 text-white">African Data Engineering and Science Association (ADESA)</p>
+              <p class="my-3 text-white">Data Science Nigeria Artificial Intelligence Club </p>
+              </div>
+
+            </div>
+
+
+
+           </div>
+		</div>
+	</div>
+</section>
+</div>
+<section class="w3l-testimonials" id="testimonials">
+  <div class="customers-6-content py-5">
+    <div class="container py-lg-3">
+      <div class="heading text-center mx-auto">
+        <h3 class="head">What They Says</h3>
+      </div>
+
+      <div id="customerhnyCarousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li data-target="#customerhnyCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#customerhnyCarousel" data-slide-to="1"></li>
+                      
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner pb-5">
+
+          <div class="carousel-item active">
+            <div class="customer row py-5 mt-3">
+              <div class="col-lg-4 col-md-6">
+                <div class="card">
+                 
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src= '#' alt="">
+                    <h3 class="card-title mt-2">Mrs Sola Olowoyo</h3>
+                    <p class="sub-title mb-3">AD Director, National Orientation Agency, Abuja</p>
+                    <p class="card-text">  "..."
+                    </p>
+                  
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 off-testi-2">
+                <div class="card">
+                
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src= '#' alt="">
+                    <h3 class="card-title mt-2">Nathan </h3>
+                    <p class="sub-title mb-3">Data scientist at Data Science Nigeria</p>
+                    <p class="card-text">  "...."
+                    </p>
+                    
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 off-testi">
+                <div class="card">
+                  
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src='Mywebsite/images/c3.jpg' alt="">
+                    <h3 class="card-title mt-2">Isaiah</h3>
+                    <p class="sub-title mb-3">Data Science Nigeria</p>
+                    <p class="card-text">  "...."
+                     </p>
+                   
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--.item-->
+
+          <div class="carousel-item">
+            <div class="customer row py-5 mt-3">
+              <div class="col-lg-4 col-md-6">
+
+
+
+            </div>
+            
+          </div>
+           
+
+        </div>
+        <!--.carousel-inner-->
+      </div>
+    </div>
+  </div>
+  <!--//customers -->
+</section>
+ 
+ <!-- grids block 5 -->
+ <section class="w3l-footer-29-main" id="footer">
+  <div class="footer-29 text-center">
+      <div class="container">
+        
+        <div class="main-social-footer-29">
+                    
+          <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+          <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+          <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+          <a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+          <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+      </div>
+          <div class="bottom-copies text-center">
+              <p class="copy-footer-29">© 2020 My Website. All rights reserved | Designed by <a href="https://w3layouts.com">W3layouts</a></p>
+               
+          </div>
+      </div>
+  </div>
+   <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+              <span class="fa fa-angle-up"></span>
+                 </button>
+                 <script>
+                     // When the user scrolls down 20px from the top of the document, show the button
+                     window.onscroll = function () {
+                         scrollFunction()
+                     };
+              
+                     function scrollFunction() {
+                         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                             document.getElementById("movetop").style.display = "block";
+                         } else {
+                             document.getElementById("movetop").style.display = "none";
+                         }
+                     }
+              
+                     // When the user clicks on the button, scroll to the top of the document
+                     function topFunction() {
+                         document.body.scrollTop = 0;
+                         document.documentElement.scrollTop = 0;
+                     }
+                 </script>
+                 <!-- /move top -->
+</section>
+<!-- // grids block 5 -->
+
+<script src="{% static 'Mywebsite/js/jquery-3.3.1.min.js' %}"></script>
+<!-- //footer-28 block -->
+</section>
+
+<script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+<!-- Smooth scrolling -->
+
+ <!-- chatbot scripts -->
+ <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "fd466851-8cc7-4c9a-9909-4cce3f1ce7b8", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "320dce70-274d-487a-ab2a-a553ab4e018e", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+{% endblock %}
