@@ -1,6 +1,6 @@
 Exception: STATUS_ACCESS_VIOLATION at eip=80000000
 eax=80070057 ebx=80000000 ecx=752C7F1C edx=00000000 esi=004A0410 edi=80000000
-ebp=0028CB28 esp=0028C614 program=C:\Program Files (x86)\Git\usr\bin\mintty.exe, pid 1837, thread main
+ebp=0028CB28 esp=0028C614 program=C:\Program Files (x86)\Git\usr\bin\mintty.exe, pid 325, thread main
 cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
 Stack trace:
 Frame     Function  Args
