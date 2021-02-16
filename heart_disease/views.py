@@ -21,6 +21,7 @@ def getPredictions(age, sex, cp, trestbps, chol, fbs, restecg, thalach,exang, ol
 	scaler = pickle.load(open('heart_disease/normalizer.pkl', 'rb'))
 	final_features = scaler.fit_transform([age, sex, cp, trestbps, chol, fbs, restecg, thalach,exang, oldpeak, slope, ca, thal])
 	prediction = model.predict(final_features)
+	#print("prediction:",prediction)
 	if prediction == 0:
 		return "No Heart Disease"
 	elif prediction == 1:
@@ -44,5 +45,5 @@ def result(request):
 	thal = int(request.GET['thal'])
 
 	result = getPredictions(age, sex, cp, trestbps, chol, fbs, restecg, thalach,exang, oldpeak, slope, ca, thal)
-
-	return render(request, 'index.html',{'prediction_text':result})
+	#return render(request, 'heart_index.html',{'prediction_text':result})
+	return render(request, 'result.html',{'result':result})
