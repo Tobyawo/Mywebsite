@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'index' %}">Home</a>
+            <a class="nav-link" href="{% url 'mysite_index' %}">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'about' %}">About</a>
@@ -236,7 +236,7 @@
                                 <img src="{% static 'Mywebsite/images/heart-image.jpeg'%}" class="img-responsive" alt="" />
                             </figure>
                         </a>
-                        <p><a href="#"> Click Here to check out the Heart Disease Predictor WebApp</a></p>
+                        <p><a href="{% url 'heart_index' %}"> Click Here to check out the Heart Disease Predictor WebApp</a></p>
                     </div>
 
                      <div class="product">

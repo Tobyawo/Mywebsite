@@ -14,7 +14,7 @@ import pickle
 # Create your views here.
 
 def index(request): 
-    return render(request, "heart_disease/index.html")
+    return render(request, "heart_disease/heart_index.html")
 
 def getPredictions(age, sex, cp, trestbps, chol, fbs, restecg, thalach,exang, oldpeak, slope, ca, thal):
 	model = pickle.load(open('heart_disease/heart_disease_model.pkl', 'rb'))
@@ -45,5 +45,5 @@ def result(request):
 	thal = int(request.GET['thal'])
 
 	result = getPredictions(age, sex, cp, trestbps, chol, fbs, restecg, thalach,exang, oldpeak, slope, ca, thal)
-	#return render(request, 'heart_index.html',{'prediction_text':result})
-	return render(request, 'result.html',{'result':result})
+	return render(request, 'heart_index.html',{'prediction_text':result})
+	#return render(request, 'result.html',{'result':result})
