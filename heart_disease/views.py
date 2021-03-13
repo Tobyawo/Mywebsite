@@ -5,6 +5,7 @@ from django import forms
 from django.http import HttpResponseBadRequest, HttpResponseRedirect, Http404
 from django.shortcuts import render
 from django.urls import reverse
+import numpy as np
 #import sklearn
 #from sklearn.preprocessing import MinMaxScaler
 
@@ -16,18 +17,6 @@ import pickle
 def index(request): 
     return render(request, "heart_disease/heart_index.html")
 
-def getPredictions(age, sex, cp, trestbps, chol, fbs, restecg, thalach,exang, oldpeak, slope, ca, thal):
-	model = pickle.load(open('heart_disease/heart_disease_model.pkl', 'rb'))
-	scaler = pickle.load(open('heart_disease/normalizer.pkl', 'rb'))
-	final_features = scaler.fit_transform([age, sex, cp, trestbps, chol, fbs, restecg, thalach,exang, oldpeak, slope, ca, thal])
-	prediction = model.predict(final_features)
-	#print("prediction:",prediction)
-	if prediction == 0:
-		return "No Heart Disease"
-	elif prediction == 1:
-		return "Heart Disease present"
-	else:
-		return "error"
 
 def result(request):
 	age = int(request.GET['age'])
@@ -43,7 +32,24 @@ def result(request):
 	slope = int(request.GET['slope'])
 	ca = int(request.GET['ca'])
 	thal = int(request.GET['thal'])
+	#####
 
-	result = getPredictions(age, sex, cp, trestbps, chol, fbs, restecg, thalach,exang, oldpeak, slope, ca, thal)
-	return render(request, 'heart_index.html',{'prediction_text':result})
-	#return render(request, 'result.html',{'result':result})
+	model = pickle.load(open('heart_disease/heart_disease_model.pkl', 'rb'))
+	scaler = pickle.load(open('heart_disease/normalizer.pkl', 'rb'))
+
+	features = [age, sex, cp, trestbps, chol, fbs, restecg, thalach,exang, oldpeak, slope, ca, thal]
+	int_features = [x for x in features]
+	final_features = [np.array(int_features)]
+	final_features = scaler.fit_transform(final_features)
+	prediction = model.predict(final_features)
+	output = round(prediction[0], 2)
+	if output == 0:
+		return render(request, 'heart_disease/heart_index.html',{'prediction_text':"This Patient Has No Heart Disease"})
+	elif output == 1:
+		return render(request, 'heart_disease/heart_index.html',{'prediction_text':"Heart Disease Detected"})
+	else:
+		return render(request, 'heart_disease/heart_index.html',{'prediction_text':"Error"})
+	
+
+
+	
