@@ -7,7 +7,6 @@ from django.shortcuts import render
 from django.urls import reverse
 
 from flights.models import *
-#from models import *
 from users.forms import UserBookingForm
 
 # Create your views here.

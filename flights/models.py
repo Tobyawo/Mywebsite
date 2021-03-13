@@ -12,7 +12,7 @@ For every model added or changed, we must make migrations and migrate.
 We can then register the model in admin.py and visit the admin page
 to create some info!'''
 
-# Create your models here.
+# Create your models here (sample).
 
 '''class Airport(models.Model):
 	code = models.CharField(max_length= 3)

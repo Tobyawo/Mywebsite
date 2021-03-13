@@ -32,8 +32,8 @@ def result(request):
 	slope = int(request.GET['slope'])
 	ca = int(request.GET['ca'])
 	thal = int(request.GET['thal'])
-	#####
-
+	
+	#lets import the model and normalizer
 	model = pickle.load(open('heart_disease/heart_disease_model.pkl', 'rb'))
 	scaler = pickle.load(open('heart_disease/normalizer.pkl', 'rb'))
 

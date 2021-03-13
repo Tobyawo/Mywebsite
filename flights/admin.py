@@ -9,7 +9,7 @@ we can log into a page that looks like this'''
 
 
 from .models import *
-# Register your models here.
+# you can Register your models here this way.
 #admin.site.register(Flight)
 #admin.site.register(Book_record)
 admin.site.register(Passenger)
