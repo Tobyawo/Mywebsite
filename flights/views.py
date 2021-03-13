@@ -16,7 +16,7 @@ def index_user(request):
     return render(request, "flights/index.html")
 
 def index_submit(request): 
-    records = Book_record.objects.get(id=4)
+    records = Book_record.objects.get(id=1)
     return render(request, "flights/index.html", {
         "records": records 
     })

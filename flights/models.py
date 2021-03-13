@@ -14,13 +14,13 @@ to create some info!'''
 
 # Create your models here.
 
-#class Airport(models.Model):
-#	code = models.CharField(max_length= 3)
-#	#city = models.CharField(max_length= 64)
+'''class Airport(models.Model):
+	code = models.CharField(max_length= 3)
+	#city = models.CharField(max_length= 64)
 
-#	def __str__(self):
-#
-''' To Create and save a new flight from the django shell into the Flight table:
+	def __str__(self):
+
+ To Create and save a new flight from the django shell into the Flight table:
 # Create some new airports
 jfk = Airport.objects.get(city="New York")
 cdg = Airport.objects.get(city="Paris")
@@ -32,7 +32,7 @@ cdg.save()
 
 
 class Flight(models.Model):
-	origin = models.CharField(max_length= 64)#ForeignKey(Airport, on_delete=models.CASCADE, related_name="departures")
+	origin = models.CharField(max_length= 64)#you can add other param such as ForeignKey(Airport, on_delete=models.CASCADE, related_name="departures")
 	destination = models.CharField(max_length= 64)#ForeignKey(Airport, on_delete=models.CASCADE, related_name="arrivals")
 	#duration = models.IntegerField()
 
