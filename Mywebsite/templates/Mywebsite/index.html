@@ -250,25 +250,15 @@
                         <p><a href="{% url 'login_link' %}"> Click Here to check out the flight booking website</a></p>
                     </div>
 
-                     <div class="product">
-                        <p>Image Annotation</p>
-                        <a href="{% static 'Mywebsite/images/data-annotation-image.jpeg'%}" data-lightbox="example-set"
-                            data-title="Image objects annotation">
-                            <figure>
-                                <img src="{% static 'Mywebsite/images/data-annotation-image.jpeg' %}" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                    </div>
-
                     <div class="product">
-                        <p>Supermarket Price Prediction WebApp</p>
+                        <p>Sales Prediction WebApp</p>
                         <a href="{% static 'Mywebsite/images/datascience.jpeg' %}" data-lightbox="example-set"
-                            data-title="This webapp predicts the presence of heart disease in patient">
+                            data-title="This webapp predicts the sales in the third month">
                             <figure>
                                 <img src="{% static 'Mywebsite/images/datascience.jpeg' %}" class="img-responsive" alt="" />
                             </figure>
                         </a>
-                        <p><a href="#"> Click Here to check out My supermarket prices prediction WebApp</a></p>
+                        <p><a href="{% url 'sales_index' %}"> Click Here to check out my Sales prediction WebApp</a></p>
                     </div>
 
                      <div class="product">
@@ -292,6 +282,16 @@
                             </figure>
                         </a>
                         <p><a href="https://www.Tobyawo.github.com"> Click Here to check out my Geospatial analysis repository on Github</a></p>
+                    </div>
+
+                      <div class="product">
+                        <p>Image Annotation</p>
+                        <a href="{% static 'Mywebsite/images/data-annotation-image.jpeg'%}" data-lightbox="example-set"
+                            data-title="Image objects annotation">
+                            <figure>
+                                <img src="{% static 'Mywebsite/images/data-annotation-image.jpeg' %}" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
                     </div>
 
 
@@ -621,7 +621,7 @@
           <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
       </div>
           <div class="bottom-copies text-center">
-              <p class="copy-footer-29">© 2020 My Website. All rights reserved | Designed by <a href="https://w3layouts.com">W3layouts</a></p>
+              <p class="copy-footer-29">© 2020 My Website. Designed by <a href="#">Oluwatobi</a></p>
                
           </div>
       </div>

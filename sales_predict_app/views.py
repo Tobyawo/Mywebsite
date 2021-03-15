@@ -31,4 +31,4 @@ def result(request):
 	final_features = [np.array(int_features)]
 	prediction = model.predict(final_features)
 	output = round(prediction[0], 2)
-	return render(request, 'sales_predict_app/sales_index.html',{'prediction_text':'Sales should be $ {}'.format(output)})
+	return render(request, 'sales_predict_app/sales_index.html',{'prediction_text':'Sales should be ${}'.format(output)})
