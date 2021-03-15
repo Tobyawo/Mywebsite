@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,18 +23,18 @@
      <br>
     <center><h1 class='main_heading'> Heart Disease Prediction Model</h1></center>
     <p>
-    <center><img src="static/heart_disease/images/heart2.jpeg" alt="heart-image.jpeg" /></center>
+    <center><img src='heart_disease/static/heart_disease/images/heart.jpeg' alt="heart-image.jpeg"></center>
     </p>
     <p> Heart disease is one of the biggest causes of mobidity and mortality among the population of the world. Prediction of cardiovascular disease is regarded as one of the most important subjects in the section of clinical data analysis.</p>
     <p>This Web Based Application uses Machine Learning Algorithm to predict whether a person is suffering from heart disease or not using one of the most used dataset - Cleveland Heart Disease Dataset from UCI Repository. [Note that this model is 85% accurate]</p>
     <br>
     </div>
-    <div class="instructions">
+    <div class="instruction">
       <h2>Instructions: </h2>
       <p> Please Enter the values for all the following fields and click on PREDICT button</p>
 
     </div>
-
+    <div>
     <form class="form-horizontal" action="{% url 'heart_result' %}">
   
 
@@ -53,6 +54,7 @@
       <option value="1">Female</option>
      </select>
   </div>
+</div>
         <p></p>
 
 
@@ -128,7 +130,7 @@
       </div> <p></p>
 
       <div class="form-group">
-          <label for="slope">Slope of the ST segment</label></label>
+          <label for="slope">Slope of the ST segment</label>
         <div class="col-sm-10">
             <select id="slope" name="slope">
       <option value="1">  up sloping   </option>
@@ -137,7 +139,7 @@
       <option value="4"> Unknown  </option>
 		   </select>
         </div>
-      </div>  <p></p>
+        </div> <p></p>
 
       <div class="form-group">
           <label for="ca">Number of major vessels colored by floursopy</label>
@@ -167,10 +169,13 @@
 
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-         <center><button type="submit" class="button btn btn-default">PREDICT</button><center/>
+         <center><button type="submit" class="button btn btn-default">PREDICT
+         </button></center>
         </div>
       </div>
+
     </form>
+    </div>
 
 
 
