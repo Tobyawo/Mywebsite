@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'users',
     'Mywebsite',
     'heart_disease',
+    'sales_predict_app',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
