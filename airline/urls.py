@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,6 +25,7 @@ urlpatterns = [
     path('users/', include("users.urls")),
     path('heart/', include("heart_disease.urls")),
     path('sales/', include("sales_predict_app.urls")),
+    path('image/', include("image_class_app.urls")),
     
     
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

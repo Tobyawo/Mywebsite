@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-import django_heroku
+#import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'Mywebsite',
     'heart_disease',
     'sales_predict_app',
+    'image_class_app',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -127,23 +128,61 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Extra lookup directories for collectstatic to find static files
 #STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#print("base dir path", MEDIA_ROOT)
+MEDIA_URL = '/Users/mac/IdeaProjects/Mywebsite/media/'
+
+
+
 #activating django-heroku
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
 
 
 #Add configuration for static files storage using whitenoise
 #STATICFILES_STORAGE ='whitenoise.django.GzipManifestStaticFilesStorage'
 
 
+#----------------------------------------#
+#image classification code
 
-    
+import keras
+import numpy as np
+from keras import backend as K
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+from tensorflow.python.keras.backend import set_session
+from keras.applications import vgg16
 
+
+
+
+def get_session():
+    config = tf.ConfigProto()
+    config.gpu_options.allow_growth = True
+    return tf.Session(config=config)
+
+#K.tensorflow_backend.set_session(get_session())
+tf.compat.v1.keras.backend.set_session(get_session())
+
+
+config = tf.ConfigProto()
+config.gpu_options.allow_growth = True
+SESS = tf.Session(config=config)
+print("model loading")
+GRAPH1 = tf.get_default_graph()
+
+set_session(SESS)
+# Load the VGG model
+VGG_MODEL = vgg16.VGG16(weights="imagenet")
